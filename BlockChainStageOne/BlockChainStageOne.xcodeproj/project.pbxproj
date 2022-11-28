@@ -13,6 +13,16 @@
 		B643F3A42934200100686A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643F3A22934200100686A1B /* Main.storyboard */; };
 		B643F3A62934200500686A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B643F3A52934200500686A1B /* Assets.xcassets */; };
 		B643F3A92934200500686A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643F3A72934200500686A1B /* LaunchScreen.storyboard */; };
+		B643F3B2293420E200686A1B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3B1293420E200686A1B /* Account.swift */; };
+		B643F3B72934220400686A1B /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3B62934220400686A1B /* KeyPair.swift */; };
+		B643F3B92934221800686A1B /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3B82934221800686A1B /* PrivateKey.swift */; };
+		B643F3BB2934222500686A1B /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3BA2934222500686A1B /* PublicKey.swift */; };
+		B643F3BD2934227D00686A1B /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3BC2934227D00686A1B /* Hash.swift */; };
+		B643F3BF2934228B00686A1B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3BE2934228B00686A1B /* Operation.swift */; };
+		B643F3C12934229500686A1B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3C02934229500686A1B /* Transaction.swift */; };
+		B643F3C3293422A200686A1B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3C2293422A200686A1B /* Block.swift */; };
+		B643F3C5293422B100686A1B /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3C4293422B100686A1B /* Blockchain.swift */; };
+		B643F3C72934236400686A1B /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643F3C62934236400686A1B /* Signature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		B643F3A52934200500686A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B643F3A82934200500686A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B643F3AA2934200500686A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B643F3B1293420E200686A1B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B643F3B62934220400686A1B /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		B643F3B82934221800686A1B /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		B643F3BA2934222500686A1B /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		B643F3BC2934227D00686A1B /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		B643F3BE2934228B00686A1B /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		B643F3C02934229500686A1B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B643F3C2293422A200686A1B /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		B643F3C4293422B100686A1B /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		B643F3C62934236400686A1B /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 		B643F39B2934200100686A1B /* BlockChainStageOne */ = {
 			isa = PBXGroup;
 			children = (
+				B643F3B0293420C400686A1B /* Core */,
 				B643F39C2934200100686A1B /* AppDelegate.swift */,
 				B643F39E2934200100686A1B /* SceneDelegate.swift */,
 				B643F3A02934200100686A1B /* ViewController.swift */,
@@ -65,6 +86,23 @@
 				B643F3AA2934200500686A1B /* Info.plist */,
 			);
 			path = BlockChainStageOne;
+			sourceTree = "<group>";
+		};
+		B643F3B0293420C400686A1B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B643F3B1293420E200686A1B /* Account.swift */,
+				B643F3B62934220400686A1B /* KeyPair.swift */,
+				B643F3B82934221800686A1B /* PrivateKey.swift */,
+				B643F3BA2934222500686A1B /* PublicKey.swift */,
+				B643F3BC2934227D00686A1B /* Hash.swift */,
+				B643F3BE2934228B00686A1B /* Operation.swift */,
+				B643F3C02934229500686A1B /* Transaction.swift */,
+				B643F3C2293422A200686A1B /* Block.swift */,
+				B643F3C4293422B100686A1B /* Blockchain.swift */,
+				B643F3C62934236400686A1B /* Signature.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B643F3BB2934222500686A1B /* PublicKey.swift in Sources */,
+				B643F3C3293422A200686A1B /* Block.swift in Sources */,
+				B643F3BD2934227D00686A1B /* Hash.swift in Sources */,
 				B643F3A12934200100686A1B /* ViewController.swift in Sources */,
+				B643F3B2293420E200686A1B /* Account.swift in Sources */,
+				B643F3C5293422B100686A1B /* Blockchain.swift in Sources */,
+				B643F3C12934229500686A1B /* Transaction.swift in Sources */,
+				B643F3C72934236400686A1B /* Signature.swift in Sources */,
+				B643F3B72934220400686A1B /* KeyPair.swift in Sources */,
+				B643F3BF2934228B00686A1B /* Operation.swift in Sources */,
 				B643F39D2934200100686A1B /* AppDelegate.swift in Sources */,
 				B643F39F2934200100686A1B /* SceneDelegate.swift in Sources */,
+				B643F3B92934221800686A1B /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
